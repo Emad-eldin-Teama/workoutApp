@@ -1,5 +1,6 @@
 package com.example.thesevenmmnutesworkout
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -10,8 +11,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+
     }
     fun startButton(view:View){
-      Toast.makeText(this,"here we start the exercise ",Toast.LENGTH_LONG).show()
+      val intent = Intent(this , ExerciseActivity::class.java)
+        startActivity(intent)
+
     }
     }
