@@ -11,7 +11,7 @@ class FinishActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_finish)
 
-        //TODO(Step 4 : Setting the action bar with the toolbar added in the activity layout and adding a back arrow button and its click event.)
+        //
         //START
         setSupportActionBar(toolbar_finish_activity)
 
