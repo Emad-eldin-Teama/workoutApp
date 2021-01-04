@@ -40,8 +40,9 @@ class ExerciseActivity : AppCompatActivity(), TextToSpeech.OnInitListener{
         val actionbar = supportActionBar
         actionbar?.setDisplayHomeAsUpEnabled(true)
 
+
         toolbar_exercise_activity.setNavigationOnClickListener {
-            customDialogForBackButton()
+            onBackPressed()
 
         }
             tts= TextToSpeech(this,this)
@@ -49,6 +50,9 @@ class ExerciseActivity : AppCompatActivity(), TextToSpeech.OnInitListener{
         setupRestView()
         setupExerciseStatusRecyclerView ()
 
+    }
+    override fun onBackPressed() {
+        customDialogForBackButton()
     }
 
     override fun onDestroy() {
@@ -186,6 +190,8 @@ class ExerciseActivity : AppCompatActivity(), TextToSpeech.OnInitListener{
         //Start the dialog and display it on screen.
         customDialog.show()
     }
+
+
     // END
 }
 
