@@ -1,11 +1,11 @@
-package com.example.thesevenmmnutesworkout
+package com.emadapp.sevenminworkout
 
-import android.database.sqlite.SQLiteOpenHelper
 import android.os.Build
 import android.os.Bundle
 import android.util.Log
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
+import com.emadapp.sevenminworkout.R
 import kotlinx.android.synthetic.main.activity_finish.*
 import java.text.SimpleDateFormat
 import java.util.*

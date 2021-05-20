@@ -1,4 +1,4 @@
-package com.example.thesevenmmnutesworkout
+package com.emadapp.sevenminworkout
 
 import android.content.Context
 import android.graphics.Color
@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
+import com.emadapp.sevenminworkout.R
 import kotlinx.android.synthetic.main.item_exercise_status.view.*
 
 class ExerciseStatusAdaptor(val items:ArrayList<ExerciseModel>, val context:Context):RecyclerView.Adapter<ExerciseStatusAdaptor.ViewHolder> (){
@@ -28,13 +29,19 @@ class ExerciseStatusAdaptor(val items:ArrayList<ExerciseModel>, val context:Cont
      val model: ExerciseModel = items[position]
         holder.tvItem.text= model.getId().toString()
         if(model.getIsSelected()){
-            holder.tvItem.background = ContextCompat.getDrawable(context,R.drawable.item_circular_thin_color_accent_border)
+            holder.tvItem.background = ContextCompat.getDrawable(context,
+                R.drawable.item_circular_thin_color_accent_border
+            )
             holder.tvItem.setTextColor(Color.parseColor("#212121"))
         }else if(model.getIsCompleted()){
-            holder.tvItem.background = ContextCompat.getDrawable(context,R.drawable.item_circular_color_accent_background)
+            holder.tvItem.background = ContextCompat.getDrawable(context,
+                R.drawable.item_circular_color_accent_background
+            )
             holder.tvItem.setTextColor(Color.parseColor("#FFFFFF"))
         }else{
-            holder.tvItem.background = ContextCompat.getDrawable(context,R.drawable.item_circular_color_gray_background)
+            holder.tvItem.background = ContextCompat.getDrawable(context,
+                R.drawable.item_circular_color_gray_background
+            )
             holder.tvItem.setTextColor(Color.parseColor("#212121"))
         }
     }

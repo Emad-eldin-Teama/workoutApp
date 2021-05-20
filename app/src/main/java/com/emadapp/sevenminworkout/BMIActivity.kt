@@ -1,10 +1,11 @@
-package com.example.thesevenmmnutesworkout
+package com.emadapp.sevenminworkout
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.RadioGroup
 import android.widget.Toast
+import com.emadapp.sevenminworkout.R
 import kotlinx.android.synthetic.main.activity_bmi.*
 import java.math.BigDecimal
 import java.math.RoundingMode

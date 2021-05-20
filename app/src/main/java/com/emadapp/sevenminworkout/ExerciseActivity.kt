@@ -1,4 +1,4 @@
-package com.example.thesevenmmnutesworkout
+package com.emadapp.sevenminworkout
 
 import android.app.Dialog
 import android.content.Intent
@@ -10,12 +10,11 @@ import android.os.CountDownTimer
 import android.speech.tts.TextToSpeech
 import android.util.Log
 import android.view.View
-import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.emadapp.sevenminworkout.R
 import kotlinx.android.synthetic.main.activity_exercise.*
 import kotlinx.android.synthetic.main.dialog_custom_back_confirmation.*
-import org.w3c.dom.Text
 import java.util.*
 import kotlin.collections.ArrayList
 
@@ -30,7 +29,7 @@ class ExerciseActivity : AppCompatActivity(), TextToSpeech.OnInitListener{
     private var currentExercisePosition = -1
     private var tts:TextToSpeech?= null
     private var player: MediaPlayer? = null
-    private var exerciseAdaptor :ExerciseStatusAdaptor? = null
+    private var exerciseAdaptor : ExerciseStatusAdaptor? = null
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -111,7 +110,7 @@ class ExerciseActivity : AppCompatActivity(), TextToSpeech.OnInitListener{
                     setupRestView()
                 } else {
                     finish()
-                    val intent = Intent(this@ExerciseActivity,FinishActivity::class.java)
+                    val intent = Intent(this@ExerciseActivity, FinishActivity::class.java)
                     startActivity(intent)
                 }
             }
@@ -120,7 +119,7 @@ class ExerciseActivity : AppCompatActivity(), TextToSpeech.OnInitListener{
 
     private fun setupRestView() {
        try {
-           player = MediaPlayer.create(applicationContext,R.raw.press_start)
+           player = MediaPlayer.create(applicationContext, R.raw.press_start)
            player!!.isLooping=false
            player!!.start()
        }

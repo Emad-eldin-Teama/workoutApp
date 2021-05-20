@@ -1,4 +1,6 @@
-package com.example.thesevenmmnutesworkout
+package com.emadapp.sevenminworkout
+
+import com.emadapp.sevenminworkout.R
 
 class Constants {
     companion object {

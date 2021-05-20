@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.thesevenmmnutesworkout">
+    package="com.emadapp.sevenminworkout">
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/latestworkout"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/latestworkout"
         android:supportsRtl="true"
         android:theme="@style/Theme.TheSevenmMnutesWorkout">
-        <activity android:name=".HistoryActivity"
+        <activity android:name="com.emadapp.sevenminworkout.HistoryActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"
             />
         <activity
-            android:name=".BMIActivity"
+            android:name="com.emadapp.sevenminworkout.BMIActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.MaterialComponents.Light.NoActionBar" />
         <activity
-            android:name=".FinishActivity"
+            android:name="com.emadapp.sevenminworkout.FinishActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
-            android:name=".ExerciseActivity"
+            android:name="com.emadapp.sevenminworkout.ExerciseActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
-            android:name=".MainActivity"
+            android:name="com.emadapp.sevenminworkout.MainActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>

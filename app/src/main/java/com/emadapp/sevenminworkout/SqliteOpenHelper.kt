@@ -1,4 +1,4 @@
-package com.example.thesevenmmnutesworkout
+package com.emadapp.sevenminworkout
 
 
 import android.content.ContentValues

@@ -1,10 +1,9 @@
-package com.example.thesevenmmnutesworkout
+package com.emadapp.sevenminworkout
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
-import android.widget.Toast
+import com.emadapp.sevenminworkout.R
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -18,11 +17,11 @@ class MainActivity : AppCompatActivity() {
         }
 
         llBMI.setOnClickListener{
-            val intent = Intent (this,BMIActivity::class.java)
+            val intent = Intent (this, BMIActivity::class.java)
          startActivity(intent)
         }
         llHistory.setOnClickListener{
-            val intent = Intent (this,HistoryActivity::class.java)
+            val intent = Intent (this, HistoryActivity::class.java)
             startActivity(intent)
         }
     }

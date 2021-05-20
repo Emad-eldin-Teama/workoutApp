@@ -1,4 +1,4 @@
-package com.example.thesevenmmnutesworkout
+package com.example.sevenminworkout
 
 import org.junit.Test
 

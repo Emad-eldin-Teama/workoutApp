@@ -1,4 +1,4 @@
-package com.example.thesevenmmnutesworkout
+package com.emadapp.sevenminworkout
 
 import android.content.Context
 import android.graphics.Color
@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.emadapp.sevenminworkout.R
 import kotlinx.android.synthetic.main.item_history_row.view.*
 
 class HistoryAdapter(val context: Context, val items: ArrayList<String>) :
